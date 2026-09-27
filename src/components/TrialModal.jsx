@@ -159,10 +159,10 @@ export default function TrialModal({ isOpen, onClose }) {
               <div className="pt-4">
                 <button
                   type="submit"
-                  className="btn-magnetic w-full py-3.5 rounded-full bg-[#C9A84C] text-[#0D0D12] font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-gold-glow group cursor-pointer"
+                  className="btn-magnetic btn-gold w-full py-3.5 rounded-full font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-gold-glow group cursor-pointer"
                 >
-                  <span className="btn-slide bg-[#FAF8F5]" />
-                  <span className="flex items-center gap-2 group-hover:text-[#0D0D12]">
+                  <span className="btn-slide" />
+                  <span className="flex items-center gap-2 text-[#0D0D12] font-black transition-colors">
                     Synthesize Admissions Dossier
                     <ArrowRight className="w-4 h-4" />
                   </span>
@@ -245,10 +245,13 @@ export default function TrialModal({ isOpen, onClose }) {
 
             <button
               onClick={handleReset}
-              className="w-full py-3.5 rounded-full bg-[#C9A84C] text-[#0D0D12] font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 hover:bg-[#E2CE90] transition-colors cursor-pointer"
+              className="btn-magnetic btn-gold w-full py-3.5 rounded-full font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-gold-glow cursor-pointer"
             >
-              Enter Candidate Workspace
-              <ArrowRight className="w-4 h-4" />
+              <span className="btn-slide" />
+              <span className="flex items-center gap-2 text-[#0D0D12] font-black transition-colors">
+                Enter Candidate Workspace
+                <ArrowRight className="w-4 h-4" />
+              </span>
             </button>
           </div>
         )}

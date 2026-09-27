@@ -65,10 +65,10 @@ export default function Navbar({ onOpenTrial }) {
         <div className="hidden sm:flex items-center gap-3">
           <button
             onClick={onOpenTrial}
-            className="btn-magnetic px-5 py-2 rounded-full bg-[#C9A84C] text-[#0D0D12] text-xs font-bold tracking-wider uppercase flex items-center gap-1.5 shadow-gold-soft hover:shadow-gold-glow group"
+            className="btn-magnetic btn-gold px-5 py-2 rounded-full text-xs font-bold tracking-wider uppercase flex items-center gap-1.5 group cursor-pointer"
           >
-            <span className="btn-slide bg-[#FAF8F5]" />
-            <span className="flex items-center gap-1.5 group-hover:text-[#0D0D12] transition-colors">
+            <span className="btn-slide" />
+            <span className="flex items-center gap-1.5 text-[#0D0D12] font-extrabold transition-colors">
               Start Free Trial
               <ArrowUpRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </span>
@@ -103,7 +103,7 @@ export default function Navbar({ onOpenTrial }) {
               setMobileMenuOpen(false);
               onOpenTrial();
             }}
-            className="w-full py-3 rounded-full bg-[#C9A84C] text-[#0D0D12] text-xs font-bold tracking-wider uppercase flex items-center justify-center gap-2 shadow-gold-soft mt-2"
+            className="w-full py-3 rounded-full bg-[#C9A84C] hover:bg-[#FAF8F5] text-[#0D0D12] text-xs font-extrabold tracking-wider uppercase flex items-center justify-center gap-2 shadow-gold-soft hover:shadow-gold-glow transition-all duration-300 mt-2 cursor-pointer"
           >
             Start Free Trial
             <ArrowUpRight className="w-4 h-4" />

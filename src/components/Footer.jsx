@@ -30,10 +30,10 @@ export default function Footer({ onOpenTrial }) {
 
             <button
               onClick={onOpenTrial}
-              className="btn-magnetic px-6 py-2.5 rounded-full bg-[#C9A84C] text-[#0D0D12] text-xs font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-gold-soft cursor-pointer group"
+              className="btn-magnetic btn-gold px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-gold-soft cursor-pointer group"
             >
-              <span className="btn-slide bg-[#FAF8F5]" />
-              <span className="flex items-center gap-1.5 group-hover:text-[#0D0D12] transition-colors">
+              <span className="btn-slide" />
+              <span className="flex items-center gap-1.5 text-[#0D0D12] font-black transition-colors">
                 Start Free Trial
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </span>

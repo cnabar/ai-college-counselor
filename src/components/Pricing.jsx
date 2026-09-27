@@ -146,10 +146,14 @@ export default function Pricing({ onOpenTrial }) {
                 {/* CTA Button */}
                 <button
                   onClick={onOpenTrial}
-                  className={`btn-magnetic w-full py-4 rounded-full font-sans font-bold text-xs tracking-wider uppercase flex items-center justify-center gap-2 group cursor-pointer ${tier.buttonStyle}`}
+                  className={`btn-magnetic w-full py-4 rounded-full font-sans font-extrabold text-xs tracking-wider uppercase flex items-center justify-center gap-2 group cursor-pointer ${
+                    isMiddle
+                      ? 'btn-gold shadow-gold-glow'
+                      : 'bg-white/10 hover:bg-[#FAF8F5] text-white hover:text-[#0D0D12] border border-white/20 hover:border-white'
+                  }`}
                 >
-                  <span className={`btn-slide ${isMiddle ? 'bg-[#FAF8F5]' : 'bg-[#C9A84C]'}`} />
-                  <span className={`flex items-center gap-2 transition-colors ${isMiddle ? 'group-hover:text-[#0D0D12]' : 'group-hover:text-[#0D0D12]'}`}>
+                  <span className="btn-slide" />
+                  <span className={`flex items-center gap-2 transition-colors ${isMiddle ? 'text-[#0D0D12] font-black' : 'group-hover:text-[#0D0D12] font-bold'}`}>
                     {tier.ctaText}
                     <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </span>
@@ -176,9 +180,12 @@ export default function Pricing({ onOpenTrial }) {
           </div>
           <button
             onClick={onOpenTrial}
-            className="px-5 py-2.5 rounded-full bg-[#C9A84C] text-[#0D0D12] text-xs font-bold uppercase tracking-wider whitespace-nowrap shrink-0 hover:bg-[#E2CE90] transition-colors"
+            className="btn-magnetic btn-gold px-6 py-3 rounded-full text-xs font-bold uppercase tracking-wider whitespace-nowrap shrink-0 cursor-pointer shadow-gold-soft"
           >
-            Start Risk-Free Trial
+            <span className="btn-slide" />
+            <span className="text-[#0D0D12] font-black">
+              Start Risk-Free Trial
+            </span>
           </button>
         </div>
 

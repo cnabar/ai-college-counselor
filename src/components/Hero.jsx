@@ -99,10 +99,10 @@ export default function Hero({ onOpenTrial }) {
         <div className="hero-cta-group flex flex-wrap items-center gap-4 sm:gap-6 mb-12">
           <button
             onClick={onOpenTrial}
-            className="btn-magnetic px-8 py-4 rounded-full bg-[#C9A84C] text-[#0D0D12] text-sm font-bold tracking-wider uppercase flex items-center gap-2 shadow-gold-glow group cursor-pointer"
+            className="btn-magnetic btn-gold px-8 py-4 rounded-full text-sm font-extrabold tracking-wider uppercase flex items-center gap-2 group cursor-pointer shadow-gold-glow"
           >
-            <span className="btn-slide bg-[#FAF8F5]" />
-            <span className="flex items-center gap-2 group-hover:text-[#0D0D12] transition-colors">
+            <span className="btn-slide" />
+            <span className="flex items-center gap-2 text-[#0D0D12] font-black transition-colors">
               Start Free Trial
               <ArrowUpRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
             </span>
